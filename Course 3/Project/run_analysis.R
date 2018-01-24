@@ -39,5 +39,5 @@ tidy_set <- group_by(select_total, ID, activity) %>%
         arrange(ID, activity)
 
 ## Write the new, tidy dataset to a textfile, called "tidy_data.txt"
-write.table(tidy_set, "tidy_data.txt")
+write.table(tidy_set, "tidy_data.txt", row.names = F)
 
